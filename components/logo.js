@@ -18,5 +18,17 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-
+    const frenchieEarsImg = `/images/frenchie-ears${useColorModeValue('', '-dark')}.png`;
+    return (
+        <Link href="/">
+            <a>
+                <LogoBox>
+                    <Image src={frenchieEarsImg} alt="Frenchie Ears" width={20} height={20} />
+                    <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')} fontFamily='M PLUS Rounded 1c' fontWeight='bold' ml={3}>Anthony Fiset</Text>
+                </LogoBox>
+            </a>
+            </Link>
+    )
 }
+
+export default Logo;
