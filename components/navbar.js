@@ -41,7 +41,8 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
         zIndex={2}
         {...props}
       >
-        Navbar
+        Navbar here
+        
         </Box>
     )
     }
